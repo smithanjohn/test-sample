@@ -12,7 +12,7 @@ phases:
       - npm test # (4)
   build:
     commands:
-      - docker build -t smithanjohn85/test-sample . # (5)
+      - docker build -t smithanjohn85/test-sample:latest . # (5)
   post_build:
     commands:
-      - docker push smithanjohn85/test-sample
+      - docker push smithanjohn85/test-sample:latest
