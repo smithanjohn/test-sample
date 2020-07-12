@@ -13,7 +13,7 @@ phases:
   build:
     commands:
       - pwd
-      - docker build -t docker.io/smithanjohn85/test-sample:latest -f ./Dockerfile . #(5)
+      - docker build -t docker.io/smithanjohn85/test-sample:latest . #(5)
   post_build:
     commands:
       - docker push docker.io/smithanjohn85/test-sample:latest
