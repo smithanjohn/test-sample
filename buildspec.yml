@@ -12,6 +12,7 @@ phases:
       - npm test # (4)
   build:
     commands:
+      - pwd
       - docker build -t docker.io/smithanjohn85/test-sample:latest -f ./Dockerfile . #(5)
   post_build:
     commands:
